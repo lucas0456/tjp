@@ -1,14 +1,14 @@
 <?php
-    include "nav.php"
+    include "nav.php";
 
-    if(!isset($_SESSION)){
+    if(isset($_SESSION)){
         session_start();
         } 
         if(isset($_SESSION['email'])){
                 $email = $_SESSION['email'];
                 $senha = $_SESSION['senha'];
                 $cpf = $_SESSION['cpf'];
-                 $endereco = $_SESSION['endereco'];
+                $endereco = $_SESSION['endereco'];
                         echo "
                         Bem-vindo $email |
                         <a href='logout.php'> LOGOUT </a>

@@ -9,7 +9,7 @@ $seleciona = mysqli_query($conexao,$sql);
 
     <div class="container p-5">
         <div class="text-end">
-        <a href="formularioUsuario.php "><button type="button" class="btn btn-sm btn-success"> Novo Usuário</button></a>
+        <a href="cada.php "><button type="button" class="btn btn-sm btn-success"> Novo Usuário</button></a>
         </div>
         <h1 class="text-center">Lista de usuários</h1>
         <hr>

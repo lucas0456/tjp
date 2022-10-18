@@ -1,27 +1,32 @@
 <?php
-  include "nav.php"
+  include "nav.php";
 ?>  <section class="container-fluid">
     <section class="row justify-content-center">
       <section class="col-12 col-sn-6 col-md-4">
-        <form class="form-container-center">
+        <form class="form-container-center" method="post" action="#">
           <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email" required>
             <div id="emailHelp" class="form-text"></div>
           </div>
           <div class="mb-3">
-            <label for="exampleInputPassword5" class="form-label">Senha</label>
-            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelp" required>
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelp" name="senha" required>
             <div id="passwordHelpBlock" class="form-text">
               Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços, caracteres especiais ou emoji.
             </div>
           </div>
-          <button type="submit" class="btn btn-primary">Verificar</button>
-          <ul class="navbar-nav navbar-nav me-auto mb-2 mb-lg-0 btn-light">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index">Voltar</a>
-            </li>
-          </ul>
+          <div class="mb-3">
+            <input type="submit" class="form-control btn btn-primary mb-3" value='Logar'>
+        </div>
+        <p class='text-center'>
+            <a href="#">Não possuo cadastro</a>
+        </p>
+        <p class="text-center text-danger">
+          <?php 
+          include "valida.php";
+          ?>
+        </p>
         </form>
     </section>
   </section>

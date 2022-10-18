@@ -3,10 +3,10 @@
 include "conexao.php";
 
 if (isset($_POST['email'])) {
+    $email = $_POST['email'];
     $senha = $_POST['senha'];
     $cpf = $_POST['cpf'];
-    $email = $_POST['email'];
-    $endereco = $_POST['enderoco'];
+    $endereco = $_POST['endereco'];
 
     $sql = "insert into usuarios(login, senha, nome, email, nivel, foto) values('$email', '$senha', '$cpf', '$endereco')";
     $incluir = mysqli_query($conexao,$sql);

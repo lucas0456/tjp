@@ -7,7 +7,7 @@
 
 
         //escreve a sql
-        $sql = "select * from usuarios where login = '$email' and senha = '$senha'";
+        $sql = "select * from usuarios where email = '$email' and senha = '$senha'";
 
         //executa a sql
         $testeLogin = mysqli_query($conexao, $sql);
@@ -16,32 +16,30 @@
         if($existe) {
             //carrega a sql em um vetor
             $dados = mysqli_fetch_array($testeLogin);
+            $email = $dados['email'];
             $senha = $dados['senha'];
             $cpf = $dados['cpf'];
             $enderoco = $dados['enderoço'];
-            $email = $dados['email'];
 
             if(!isset($_SESSION)) {
                 session_start();
             } 
 
+            $_SESSION['email'] = $email;
             $_SESSION['senha'] = $senha;
             $_SESSION['cpf'] = $cpf;
-            $_SESSION['email'] = $email;
             $_SESSION['endereço'] = $endereco;
 
 
-            if($nivel = "adm") {
+            if($email = "adm@gmail") {
                 header('location: adm.php');
             }
             else {
-                header('location: perfil.php');
+                header('location: index.php');
             }
         }
         else {
-            echo "<b>Usuário ou senha roubados.</b> <br>
-            <img src='../imagens/lula.png' alt='' width='50px' height='50px'>";
-        ;
+            echo "<b>Email ou senha errados.</b>";       
         }
     }
 ?>

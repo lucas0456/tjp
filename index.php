@@ -1,5 +1,5 @@
 <?php
-  include "nav.php"
+  include "nav.php";
 ?>
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
@@ -210,5 +210,5 @@
           </div>
       </div>
 <?php
- include "footer.php"
+ include "footer.php";
 ?>
