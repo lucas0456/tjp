@@ -12,6 +12,7 @@ include "controle.php";
           echo "$email
           , Seja bem-vindo"
           ?>
+          
           </h1>
      </center>
 </div>
