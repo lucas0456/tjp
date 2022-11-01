@@ -5,7 +5,7 @@
     $senha = "Luc0456sxxx@";
     $banco = "id19694321_livraria";
 
-    $conexao = mysqli_connect($local, $usuario, $senha, $banco);
+    $conexao2 = mysqli_connect($local, $usuario, $senha, $banco);
 
     header("Content-Type: text/html; charset=utf-8");
   /*  mysqli_query($conexao, "SET NAME 'utf-8'");

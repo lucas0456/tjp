@@ -1,6 +1,6 @@
 <?php 
 include "controle.php";
-include "conexao.php";
+include "conexao2.php";
 
 $sql = "select * from usuarios order by nome";
 $seleciona = mysqli_query($conexao,$sql);
