@@ -6,9 +6,9 @@ if (isset($_POST['email'])) {
     $email = $_POST['email'];
     $senha = $_POST['senha'];
     $cpf = $_POST['cpf'];
-    $endereco = $_POST['endereco'];
+    $endereco = $_POST['endereço'];
 
-    $sql = "insert into usuarios(login, senha, nome, email, nivel, foto) values('$email', '$senha', '$cpf', '$endereco')";
+    $sql = "insert into livraria(email, senha, cpf, endereco) values('$email', '$senha', '$cpf', '$endereco')";
     $incluir = mysqli_query($conexao,$sql);
 
     if($incluir) {

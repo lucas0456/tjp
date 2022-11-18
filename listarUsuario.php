@@ -1,8 +1,8 @@
 <?php 
 include "controle.php";
-include "conexao2.php";
+include "conexao.php";
 
-$sql = "select * from usuarios order by nome";
+$sql = "select * from livraria order by nome";
 $seleciona = mysqli_query($conexao,$sql);
 
 ?>

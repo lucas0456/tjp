@@ -8,6 +8,19 @@
     align-self: auto;
     -webkit-user-modify: inherit;
 }
+body::-webkit-scrollbar {
+    width: 13px;         
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: blue;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px; 
+    border: 2pX solid white;  
+  }
 .container-fluid{
     padding: 20px;
     display: block;

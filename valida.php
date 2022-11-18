@@ -7,7 +7,7 @@
 
 
         //escreve a sql
-        $sql = "select * from usuarios where email = '$email' and senha = '$senha'";
+        $sql = "select * from livraria where email = '$email' and senha = '$senha'";
 
         //executa a sql
         $testeLogin = mysqli_query($conexao, $sql);

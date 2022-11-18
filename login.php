@@ -20,7 +20,7 @@
             <input type="submit" class="form-control btn btn-primary mb-3" value='Logar'>
         </div>
         <p class='text-center'>
-            <a href="#">Não possuo cadastro</a>
+            <a href="cada.php">Não possuo cadastro</a>
         </p>
         <p class="text-center text-danger">
           <?php 

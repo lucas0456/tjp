@@ -22,9 +22,6 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="login.php" style="color: white">login</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="cada.php" style="color: white;">cadastro</a>
-              </li>
             </ul>
           </div>
         </div>

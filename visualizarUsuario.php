@@ -6,7 +6,7 @@
     if(isset($_GET['email'])){
         $login = $_GET['email'];
 
-        $sql = "select * from usuarios where login = '$email'";
+        $sql = "select * from livraria where login = '$email'";
         $seleciona = mysqli_query($conexao,$sql);
         $exibe = mysqli_fetch_array($seleciona);
             $senha = $exibe['senha'];
@@ -16,9 +16,6 @@
     ?>
     <div class="container text-start bg-gradient p-3">
         <div class="row">
-            <div class="col-2 text-center">
-                <img class="im" src="<?php echo $exibe['foto']; ?>" >
-            </div>
             <div class="col-10 text-danger">
             <?php
             echo "
