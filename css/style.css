@@ -7,6 +7,8 @@
     font-variant: normal;
     align-self: auto;
     -webkit-user-modify: inherit;
+} body {
+    overflow-x: hidden;
 }
 body::-webkit-scrollbar {
     width: 13px;         
